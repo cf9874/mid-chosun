@@ -1,0 +1,47 @@
+@import "globals.module.scss";
+
+.container {
+  .page_title {
+    height: 50px;
+    font-size: 24px;
+  }
+  .search_box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  .table_wrapper {
+    min-height: 500px;
+  }
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+  }
+  .button_wrapper {
+    margin-top: 20px;
+  }
+}
+.modal_row {
+  margin-top: 20px;
+}
+.modal_content {
+  margin-top: 10px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  padding: 15px;
+}
+.modal_recontent_row {
+  margin-top: 5px;
+}
+.modal_attachment_row {
+  margin-top: 10px;
+  cursor: pointer;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  padding: 5px;
+  padding-left: 15px;
+}
+.modal_status_select {
+  margin-left: 20px;
+}

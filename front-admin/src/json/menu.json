@@ -1,0 +1,54 @@
+[
+  {
+    "title": "관리자 정보 관리",
+    "route": "/info",
+    "submenu": [{ "title": "관리자 정보 관리", "route": "/manage" }]
+  },
+  {
+    "title": "조협소식 관리",
+    "route": "/news",
+    "submenu": [
+      { "title": "공지사항", "route": "notice" },
+      { "title": "업데이트", "route": "update" },
+      { "title": "이벤트", "route": "event" }
+    ]
+  },
+  {
+    "title": "커뮤니티 관리",
+    "route": "/community",
+    "submenu": [
+      { "title": "자유 게시판", "route": "freeboard" },
+      { "title": "스크린샷 게시판", "route": "screenshotboard" },
+      { "title": "문파홍보 게시판", "route": "guildboard" },
+      { "title": "아이디어 게시판", "route": "ideaboard" },
+      { "title": "댓글 신고 관리", "route": "comment" }
+    ]
+  },
+  {
+    "title": "고객지원 관리",
+    "route": "/cs",
+    "submenu": [{ "title": "1대1 문의", "route": "qna" }]
+  },
+  {
+    "title": "회원 관리",
+    "route": "/member",
+    "submenu": [
+      { "title": "전체 회원", "route": "list" },
+      { "title": "캐쉬아이템 결제정보", "route": "history" }
+    ]
+  },
+  {
+    "title": "게임 데이터",
+    "route": "/data",
+    "submenu": [
+      { "title": "게임 접속 유저", "route": "online" },
+      { "title": "유저 캐릭터 정보", "route": "character" },
+      { "title": "캐쉬아이템 사용 조회", "route": "cashhistory" }
+    ]
+  },
+  {
+    "title": "테스트",
+    "route": "/test",
+    "submenu": [{ "title": "홈페이지 캐쉬 변동", "route": "cash" }]
+  }
+]

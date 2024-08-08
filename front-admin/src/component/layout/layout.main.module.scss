@@ -1,0 +1,49 @@
+@import "globals.module.scss";
+.container {
+  width: 100vw;
+  height: 100vh;
+  .header {
+    border-bottom: 1px solid $basic_border_color2;
+    display: grid;
+    grid-template-columns: 250px auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    .logo_box {
+      margin-left: 20px;
+      width: 200px;
+      height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .top_menu_wrapper {
+      gap: 30px;
+      .menu {
+        padding: 5px;
+        cursor: pointer;
+        &:hover {
+          color: $blue_1;
+        }
+      }
+      .menu_active {
+        @extend .menu;
+        color: $blue_1;
+      }
+    }
+    .logout_box {
+      margin-left: 200px;
+    }
+  }
+  .main_container {
+    display: grid;
+    grid-template-columns: 250px auto;
+    min-height: calc(100vh - 200px);
+    .side_menu_box {
+      height: 100%;
+    }
+    .children {
+      padding: 10px;
+    }
+  }
+}

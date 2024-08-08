@@ -1,0 +1,34 @@
+@import "globals.module.scss";
+
+.container {
+  .page_title {
+    height: 50px;
+    font-size: 24px;
+  }
+  .search_box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  .table_wrapper {
+    min-height: 500px;
+  }
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+  }
+  .button_wrapper {
+    margin-top: 20px;
+  }
+}
+.modal_row {
+  margin-bottom: 10px;
+}
+.modal_title_row {
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  padding: 5px;
+  padding-left: 15px;
+  margin-bottom: 10px;
+}

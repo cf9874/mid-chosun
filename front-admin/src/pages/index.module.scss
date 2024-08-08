@@ -1,0 +1,38 @@
+@import "globals.module.scss";
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .page_title {
+    font-size: 24px;
+  }
+  .login_box {
+    border: 1px solid $basic_border_color2;
+    width: 400px;
+    height: 250px;
+    margin-top: 30px;
+    .login_box_row_wrapper {
+      margin-top: 35px;
+      .login_box_row {
+        height: 50px;
+        display: flex;
+        .login_box_title {
+          width: 15%;
+        }
+        .login_input_group {
+          width: 85%;
+          .login_input {
+          }
+        }
+      }
+    }
+    .login_box_button_wrapper {
+      margin-top: 30px;
+      .login_box_button {
+        width: 200px;
+      }
+    }
+  }
+}

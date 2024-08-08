@@ -1,0 +1,45 @@
+@import "globals.module.scss";
+
+.container {
+  .page_title {
+    height: 50px;
+    font-size: 24px;
+  }
+
+  .login_box {
+    width: 100%;
+    .page_title_desc {
+      font-size: 17px;
+      margin-bottom: 20px;
+    }
+    .login_box_row_wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 35px;
+      .login_box_row {
+        height: 50px;
+        display: flex;
+        width: 250px;
+        .login_box_title {
+          width: 15%;
+        }
+        .login_input_group {
+          width: 85%;
+        }
+      }
+    }
+    .login_box_button_wrapper {
+      margin-right: 50px;
+      .login_box_button {
+        width: 120px;
+        height: 50px;
+      }
+    }
+  }
+  .account_list_wrapper {
+    margin-top: 30px;
+    width: 100%;
+    min-height: 250px;
+  }
+}
