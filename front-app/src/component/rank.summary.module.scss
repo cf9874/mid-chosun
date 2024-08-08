@@ -1,0 +1,43 @@
+@import "globals.module.scss";
+
+.container {
+  border-top: 1px solid $black_2;
+  width: 100%;
+  .rank_title_box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    height: 56px;
+    .rank_title {
+      font-weight: 800;
+    }
+  }
+  .rank_box {
+    .rank_header {
+      display: grid;
+      grid-template-columns: 1fr 1px 2fr 1px 1fr;
+      .rank_header_item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+      }
+
+      .rank_header_item {
+        padding: 10px 20px;
+      }
+      .rank_header_item_divider {
+        width: 1px;
+        background-color: $gray_9;
+      }
+    }
+    .rank_header {
+      background: linear-gradient($gray_4, $gray_8);
+      color: $black_2;
+      font-weight: 600;
+      border-top: 1px solid $gray_9;
+      border-bottom: 1px solid $gray_9;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+@import "globals.module.scss";
+.notice_row {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid $gray_9;
+  padding: 0 20px;
+  .notice_date {
+    color: $black_7;
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,34 @@
+@import "globals.module.scss";
+
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.25);
+  width: 100%;
+  height: 100%;
+  .title_wrapper {
+    background-color: $white_1;
+    margin: 0 auto;
+    margin-top: 100px;
+    width: 500px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid $gray_9;
+    padding: 0 20px;
+    .modal_title {
+      font-weight: 600;
+    }
+    .modal_close {
+      cursor: pointer;
+      font-weight: 600;
+      padding: 5px 10px;
+    }
+  }
+  .postmodal {
+    margin: 0 auto;
+    align-items: center;
+  }
+}

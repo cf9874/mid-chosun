@@ -1,0 +1,82 @@
+@import "globals.module.scss";
+.container {
+  .title_menu_box {
+    width: 1300px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2.8fr;
+    padding: 35px 0 25px 0;
+    .logo {
+      cursor: pointer;
+      justify-content: center;
+      display: flex;
+      align-items: center;
+    }
+  }
+  .main_box {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    gap: 37px;
+    .main_wrapper {
+      .guide_image_main {
+        border-top: 2px solid $black_3;
+      }
+      .guide_nav_group {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        .guide_image {
+          border-bottom: 1px solid $gray_9;
+          height: fit-content;
+          height: 109px;
+          cursor: pointer;
+        }
+      }
+      .contents_group {
+        width: 950px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+
+        .content_left {
+          min-height: 200px;
+          width: 625px;
+        }
+        .content_right {
+          width: 300px;
+          .navigation_box {
+            margin-top: 30px;
+            font-size: 14px;
+          }
+          min-height: 500px;
+          .guide_btn_box {
+            margin-top: 20px;
+            display: flex;
+            gap: 3px;
+            button {
+              all: unset;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.list_container {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  .list_title {
+    cursor: pointer;
+  }
+  .list_view_all {
+    font-size: 12px;
+    cursor: pointer;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

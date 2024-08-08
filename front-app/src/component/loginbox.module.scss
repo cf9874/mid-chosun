@@ -1,0 +1,103 @@
+@import "globals.module.scss";
+
+.container {
+  background: url("../assets/img_login_board_back_nt\ 1.png") no-repeat;
+  background-size: cover;
+  padding-bottom: 20px;
+  width: 310px;
+  height: 409px;
+  .login_wrapper {
+    min-height: 200px;
+    .login_title {
+      font-size: 19px;
+      padding: 0 20px;
+
+      padding-top: 40px;
+      margin-bottom: 30px;
+      color: $white_1;
+    }
+    .login_box {
+      display: flex;
+      padding: 0 20px;
+
+      .login_input_wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        margin-right: 5px;
+        .login_input {
+          width: 164px;
+          height: 46px;
+          padding: 0 10px;
+          border: 1px solid $gray_9;
+          background: $white_1;
+          display: flex;
+          align-items: center;
+
+          &::placeholder {
+            font-size: 10px;
+            color: #bfbbb7;
+          }
+        }
+      }
+      .login_button {
+        cursor: pointer;
+        width: 100px;
+        height: 100px;
+      }
+    }
+    .member_box {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      margin-top: 25px;
+      margin-bottom: 20px;
+      font-weight: 600;
+      padding-left: 10px;
+      padding-right: 10px;
+      color: $yellow_1;
+
+      .member_nav {
+        &:first-child {
+          padding-left: 15px;
+        }
+        &:nth-child(2) {
+          margin-right: 10px;
+        }
+        cursor: pointer;
+        text-align: center;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+    .member_box_logined {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      margin-top: 25px;
+      margin-bottom: 20px;
+      font-weight: 600;
+      padding-left: 18px;
+      padding-right: 25px;
+      color: $yellow_1;
+      .member_nav {
+        cursor: pointer;
+        text-align: center;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  .download_button_wrapper {
+    width: 100%;
+    display: flex;
+    .download_button {
+      all: unset;
+      cursor: pointer;
+      width: 270px;
+      margin: 0 auto;
+      height: 97px;
+    }
+  }
+}

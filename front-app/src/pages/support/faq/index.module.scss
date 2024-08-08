@@ -1,0 +1,29 @@
+@import "globals.module.scss";
+
+.container {
+  border-top: 2px solid $black_3;
+  border-bottom: 2px solid $black_3;
+  margin-bottom: 150px;
+  padding-bottom: 40px;
+  .page_title {
+    font-size: 24px;
+    padding: 20px 0;
+    border-bottom: 2px solid $gray_9;
+    margin-bottom: 30px;
+  }
+  .faq_wrapper {
+    margin-top: 50px;
+    .faq_box {
+      margin-top: 30px;
+
+      .faq_title {
+        font-weight: 600;
+        font-size: 20px;
+        margin-bottom: 10px;
+        padding-left: 20px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid black;
+      }
+    }
+  }
+}

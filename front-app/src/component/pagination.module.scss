@@ -1,0 +1,32 @@
+.pagination_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  .button {
+    all: unset;
+    border: 1px solid red;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  .page_number_box {
+    display: flex;
+    .page_number {
+      cursor: pointer;
+      border: 1px solid red;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 30px;
+      height: 30px;
+    }
+    .page_number_selected {
+      @extend .page_number;
+      font-weight: bold;
+    }
+  }
+}

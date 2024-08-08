@@ -1,0 +1,107 @@
+@import "globals.module.scss";
+@mixin basic_font {
+  color: #99908a;
+  font-size: 11px;
+}
+
+.list_container_wide {
+  display: grid;
+  grid-template-columns: 1fr 1fr 3fr 1fr 1fr 1.2fr 1.2fr;
+  height: 37px;
+  margin: 10px 0;
+  border-bottom: 1px solid #bdb6b2;
+  position: relative;
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .diff_up {
+    color: #ba231d;
+  }
+  .diff_down {
+    color: #0072bc;
+  }
+  .floating_wrapper {
+    background-color: $white_1;
+    border: 3px solid #99908a;
+    position: absolute;
+    left: 21.2%;
+    top: 100%;
+    z-index: 3;
+    width: 352px;
+    height: 118px;
+    display: flex;
+    .profile_box {
+      display: flex;
+      flex-direction: column;
+      width: 30%;
+      .profile_image {
+        border: 1px solid #99908a;
+        width: 44px;
+        height: 37px;
+      }
+      .profile_nick {
+        margin-top: 10px;
+        font-weight: bold;
+      }
+    }
+    .rank_box {
+      width: 70%;
+      display: flex;
+      flex-direction: column;
+      padding: 0 8px;
+      .rank_box_nav {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        border-bottom: 1px solid #99908a;
+        padding-bottom: 10px;
+        .nav_text {
+          @include basic_font;
+        }
+      }
+      .rank_box_item {
+        width: 100%;
+        padding-top: 8px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        .item_title {
+          @include basic_font;
+          color: black;
+        }
+        .item_rank_text {
+          @include basic_font;
+        }
+      }
+    }
+  }
+  .item_nick_box {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    &:hover {
+      color: #ba231d;
+      text-decoration: underline;
+    }
+    .item_nick {
+      justify-content: flex-start;
+
+      cursor: pointer;
+    }
+    .item_image {
+      width: 30px;
+      height: 30px;
+      border: 1px solid burlywood;
+      cursor: pointer;
+    }
+  }
+}
+.list_container_wide_top {
+  @extend .list_container_wide;
+  font-weight: bold;
+  .item_diff {
+    font-weight: normal;
+  }
+}

@@ -1,0 +1,19 @@
+.list_container {
+  border-bottom: 1px solid #bdb6b2;
+  .list_item {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    cursor: pointer;
+    // .list_title{}
+    // .list_arrow{}
+    &:hover {
+      color: red;
+    }
+  }
+}
+
+.list_container_top {
+  @extend .list_container;
+  border-top: 2px solid black;
+}

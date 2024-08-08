@@ -1,0 +1,43 @@
+.container {
+  position: relative;
+  user-select: none;
+
+  > div:first-child {
+    width: 100px;
+    cursor: pointer;
+    border: 1px solid black;
+  }
+
+  &.selected > div:first-child {
+    border-bottom: 0;
+  }
+
+  .content {
+    width: 100px;
+    position: absolute;
+    z-index: 1000;
+    top: 100%;
+    left: 0;
+    display: none;
+    max-height: 150px;
+    background-color: white;
+    overflow-y: auto;
+    border: 1px solid black;
+    cursor: pointer;
+    // div {
+    //   border-bottom: 1px solid black;
+    // }
+
+    &::-webkit-scrollbar {
+      width: 0.5em;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #888;
+    }
+  }
+
+  &.selected .content {
+    display: block;
+  }
+}

@@ -1,0 +1,61 @@
+[
+  {
+    "main_title": "로그인",
+    "route": "member",
+    "sub_title": [
+      { "kor": "회원가입", "eng": "signup" },
+      { "kor": "계정명찾기", "eng": "findid" },
+      { "kor": "비밀번호찾기", "eng": "findpassword" }
+    ]
+  },
+  {
+    "main_title": "조협소식",
+    "route": "news",
+    "sub_title": [
+      { "kor": "공지사항", "eng": "notice" },
+      { "kor": "업데이트", "eng": "update" },
+      { "kor": "이벤트", "eng": "event" }
+    ]
+  },
+  {
+    "main_title": "조협소개",
+    "route": "info",
+    "sub_title": [
+      { "kor": "캐릭터", "eng": "character" },
+      { "kor": "무공/도술", "eng": "skill" },
+      { "kor": "아이템", "eng": "item" },
+      { "kor": "NPC", "eng": "npc" },
+      { "kor": "임무", "eng": "quest" },
+      { "kor": "몬스터", "eng": "monster" }
+    ]
+  },
+  {
+    "main_title": "조협가이드",
+    "route": "guide",
+    "sub_title": [
+      { "kor": "조작법", "eng": "controll" },
+      { "kor": "인터페이스", "eng": "interface" }
+    ]
+  },
+
+  {
+    "main_title": "아이템샵",
+    "route": "shop",
+    "sub_title": [
+      { "kor": "캐쉬충전", "eng": "cash" },
+      { "kor": "결제/구매내역", "eng": "history" },
+      { "kor": "이용안내", "eng": "info" },
+      { "kor": "판매상품", "eng": "item" },
+      { "kor": "이벤트상품", "eng": "event" },
+      { "kor": "포인트샵", "eng": "point" }
+    ]
+  },
+  {
+    "main_title": "고객지원",
+    "route": "support",
+    "sub_title": [
+      { "kor": "FAQ", "eng": "faq" },
+      { "kor": "1:1문의", "eng": "ask" }
+    ]
+  }
+]
