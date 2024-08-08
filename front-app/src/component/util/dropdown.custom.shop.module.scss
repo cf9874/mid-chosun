@@ -1,0 +1,60 @@
+@import "globals.module.scss";
+
+.container {
+  position: relative;
+  user-select: none;
+  width: 100%;
+  > div:first-child {
+    width: 50%;
+    height: 24px;
+    cursor: pointer;
+    border: 1px solid #e0e0e0;
+    padding-left: 10px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    &::after {
+      content: "v";
+      position: absolute;
+      bottom: 2.5px;
+      left: 47%;
+    }
+  }
+
+  &.selected > div:first-child {
+    border-bottom: 0;
+  }
+
+  .content {
+    width: 50%;
+    position: absolute;
+    z-index: 1000;
+    top: 100%;
+    left: 0;
+    display: none;
+    max-height: 150px;
+    background-color: $white_1;
+    overflow-y: auto;
+    border: 1px solid #e0e0e0;
+
+    cursor: pointer;
+    padding-left: 10px;
+    font-size: 12px;
+
+    // div {
+    //   border-bottom: 1px solid black;
+    // }
+
+    &::-webkit-scrollbar {
+      width: 0.5em;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #888;
+    }
+  }
+
+  &.selected .content {
+    display: block;
+  }
+}

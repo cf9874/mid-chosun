@@ -1,0 +1,228 @@
+@import "globals.module.scss";
+.container {
+  background: url("../../assets/img_bg_mid.png") repeat;
+  min-width: 100vw;
+  font-family: Noto Sans KR;
+  .top_wrapper {
+    background: url("../../assets/img_bg_top.png") no-repeat top;
+    background-size: contain;
+  }
+  .bottom_wrapper {
+    background: url("../../assets/img_bg_bot.png") no-repeat center 100%;
+    background-size: contain;
+  }
+  .title_menu_box {
+    width: 1300px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2.8fr;
+    padding: 35px 0 25px 0;
+    .logo {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  .content_bg {
+    width: 100%;
+    .contents_wrapper {
+      width: 1300px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 2.8fr;
+      gap: 40px;
+      .content_left {
+        height: fit-content;
+        .login_wrapper {
+          border: 1px solid red;
+          padding: 5px;
+          min-height: 200px;
+
+          .login_title {
+            font-size: 24px;
+            padding: 20px 10px;
+          }
+          .login_box {
+            display: flex;
+            .login_input {
+              width: 158px;
+              display: flex;
+              flex-direction: column;
+              gap: 1.5px;
+              margin-right: 5px;
+              input {
+                // background: linear-gradient(90deg, #ff32b1, #000, );
+                // box-shadow: inset 2px 2px 5px -1px #000;
+                height: 30px;
+                padding: 0 10px;
+                // border: 1px solid #333;
+                &::placeholder {
+                  font-size: 10px;
+                  color: #bfbbb7;
+                }
+              }
+            }
+            .login_button {
+              cursor: pointer;
+              width: 68px;
+              height: 63px;
+            }
+          }
+          .member_box {
+            font-size: 12px;
+            margin-top: 10px;
+            margin-bottom: 30px;
+            span {
+              margin: 0 2px;
+            }
+            .member_find_id,
+            .member_find_pw,
+            .member_sign_in {
+              cursor: pointer;
+
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+        .download_button {
+          cursor: pointer;
+          width: 100%;
+          height: 70px;
+        }
+
+        .quick_menu_wrapper {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          .quick_menu_box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border: 1px solid $gray_1;
+            background-color: #444444;
+            height: 80px;
+            cursor: pointer;
+            .quick_menu_img {
+              width: 30px;
+              height: 30px;
+              border: 1px solid $basic_border_color;
+              margin-bottom: 10px;
+            }
+            .quick_menu_title {
+              font-size: 14px;
+              color: $white_2;
+            }
+          }
+        }
+
+        .submenu_box {
+          padding: 5px;
+          margin-top: 20px;
+          min-height: 300px;
+          .nav_title {
+            font-size: 30px;
+            margin: 10px 0;
+          }
+          .search_box {
+            margin-top: 10px;
+            display: flex;
+            gap: 10px;
+            .search_input {
+              all: unset;
+              width: 80%;
+              height: 33px;
+              font-size: 12px;
+              color: #99908a;
+              background-color: $white_1;
+              border: 0;
+              outline: 0;
+              padding: 2px 10px;
+              background: url("https://web-cdn.mironline.co.kr/mir2/2013_grand/contents/dicsearch_input.gif") no-repeat;
+            }
+            .search_button {
+              all: unset;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              width: 20%;
+              height: 33px;
+              font-size: 14px;
+              cursor: pointer;
+              background-color: #938a86;
+              color: $white_1;
+            }
+          }
+          .submenu_title {
+            height: 30px;
+            margin-bottom: 10px;
+          }
+          .submenu_list {
+            .submenu {
+              height: 30px;
+              &:hover {
+                cursor: pointer;
+              }
+            }
+          }
+          .guide_box {
+            margin-top: 15px;
+            display: flex;
+            gap: 5px;
+            button {
+              all: unset;
+              cursor: pointer;
+              font-size: 14px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              height: 35px;
+              width: 50%;
+              color: #867d78;
+              background-color: #d4cfcc;
+              border: 1px solid #9a908c;
+            }
+          }
+        }
+      }
+      .content_right {
+        width: 950px;
+        height: fit-content;
+        .page_title_wrapper {
+          min-height: 180px;
+          display: flex;
+          color: $white_1;
+          justify-content: flex-end;
+          align-items: center;
+          padding-right: 20px;
+          margin-bottom: 20px;
+          .page_title_box {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            .title {
+              font-size: 30px;
+            }
+            .page_desc {
+            }
+            .route_box {
+              border-top: 1px solid $white_1;
+              margin-top: 10px;
+              padding-top: 10px;
+              display: flex;
+              span {
+                padding: 0 5px;
+              }
+            }
+          }
+        }
+        .children_wrapper {
+          min-height: 500px;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}

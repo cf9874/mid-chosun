@@ -1,0 +1,89 @@
+@import "globals.module.scss";
+.container {
+  border-top: 2px solid $black_3;
+  border-bottom: 2px solid $black_3;
+  margin-bottom: 30px;
+  padding-bottom: 40px;
+  .page_title {
+    font-size: 24px;
+    padding: 20px 0;
+    border-bottom: 2px solid $gray_9;
+    margin-bottom: 30px;
+  }
+  .page_info_title {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+  .page_info_list {
+    margin-left: 20px;
+    list-style: square;
+    .page_info_list_item {
+      padding-left: 10px;
+      font-size: 14px;
+      color: $basic_text_color;
+      &::marker {
+        content: "□";
+        font-size: 12px;
+      }
+    }
+  }
+  .user_info_container {
+    margin-top: 10px;
+    border-top: 1px solid black;
+    .user_info_row {
+      display: flex;
+
+      border-bottom: 1px solid #e0e0e0;
+      .user_info_title {
+        display: flex;
+        align-items: center;
+        width: 25%;
+        padding: 10px 30px;
+        background: linear-gradient($gray_4, $gray_8);
+        font-size: 14px;
+        font-weight: 600;
+      }
+      .user_info_input_box {
+        width: 75%;
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        .user_info_input {
+          border: 1px solid #e0e0e0;
+          width: 287px;
+          height: 38px;
+        }
+        .question_desc {
+          font-size: 12px;
+          margin-left: 10px;
+          color: $basic_text_color;
+        }
+      }
+      .user_info_question_box {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+      }
+    }
+  }
+}
+.submit_box {
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 100px;
+  .submit_button {
+    all: unset;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $black_8;
+    color: $white_1;
+    width: 150px;
+    height: 45px;
+    margin-right: 20px;
+  }
+}

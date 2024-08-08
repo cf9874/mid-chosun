@@ -1,0 +1,123 @@
+@import "globals.module.scss";
+.container {
+  border-top: 2px solid $black_3;
+  padding-bottom: 30px;
+  border-bottom: 2px solid $black_3;
+  margin-bottom: 100px;
+  .page_title {
+    font-size: 24px;
+    border-bottom: 1px solid $basic_border_color2;
+    padding: 20px 0;
+  }
+  .controll_block {
+    .controll_title {
+      margin-top: 20px;
+      margin-left: 20px;
+      margin-bottom: 20px;
+      font-weight: 600;
+    }
+    .keyboard_img_wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 10px;
+      width: 100%;
+      height: 386px;
+      border-top: 2px solid $black_4;
+      border-bottom: 1px solid $basic_border_color2;
+      background-image: linear-gradient($gray_4, $gray_8);
+      margin-bottom: 50px;
+    }
+    .keyboard_controll_table_wrapper {
+      margin-top: 20px;
+      border-top: 2px solid $black_4;
+      font-size: 14px;
+      .keyboard_controll_table {
+        display: grid;
+        grid-template-columns: 244px auto;
+        .keyboard_controll_table_header,
+        .keyboard_controll_table_item {
+          display: flex;
+          justify-content: center;
+          border-bottom: 1px solid #e9e9e9;
+        }
+        .keyboard_controll_table_header {
+          align-items: center;
+          background-image: linear-gradient($gray_4, $gray_8);
+          border-right: 1px solid #e9e9e9;
+          .keyboard_part_img_wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 200px;
+            margin: 20px 0;
+          }
+        }
+        .keyboard_controll_table_item {
+          flex-direction: column;
+          padding: 20px 0;
+          padding-left: 20px;
+          background-color: $white_1;
+          gap: 5px;
+          .keyboard_controll_table_item_row {
+            .keyboard_controll_table_item_row_title {
+              font-weight: 600;
+            }
+            .keyboard_controll_table_item_row_desc {
+              color: #919191;
+            }
+          }
+        }
+      }
+    }
+    .mouse_controll_table {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      .mouse_controll_table_section {
+        border-top: 2px solid $black_4;
+        border-bottom: 1px solid $basic_border_color2;
+        border-right: 1px solid $basic_border_color2;
+        height: 450px;
+        background-color: $white_1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        &:last-child {
+          border-right: none;
+        }
+        .mouse_controll_table_header {
+          background-image: linear-gradient($gray_4, $gray_8);
+          height: 140px;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .mouse_controll_table_item {
+          height: calc(100% - 140px);
+          padding: 10px 20px;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 8px;
+          .mouse_controll_table_item_row {
+            width: 100%;
+            font-size: 15px;
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+            .mouse_controll_table_item_row_title {
+              font-weight: 600;
+            }
+            .mouse_controll_table_item_row_desc {
+              color: #919191;
+            }
+          }
+        }
+      }
+    }
+  }
+}

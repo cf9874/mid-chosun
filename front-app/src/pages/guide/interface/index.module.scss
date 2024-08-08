@@ -1,0 +1,21 @@
+.container {
+  .sample_screen_img {
+    width: 100%;
+    height: 300px;
+    border: 1px solid #bbb;
+  }
+  .interface_info_title {
+    font-weight: 600;
+    margin-top: 40px;
+  }
+  .interface_block {
+    margin-top: 20px;
+    font-size: 14px;
+    .interface_title {
+      font-weight: 600;
+    }
+    .interface_desc {
+      color: #919191;
+    }
+  }
+}

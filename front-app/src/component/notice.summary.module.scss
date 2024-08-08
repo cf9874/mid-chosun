@@ -1,0 +1,16 @@
+@import "globals.module.scss";
+
+.container {
+  .notice_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid $gray_9;
+    border-top: 1px solid $black_3;
+    height: 56px;
+    padding: 0 20px;
+    .notice_title {
+      font-weight: 800;
+    }
+  }
+}

@@ -1,0 +1,91 @@
+@import "globals.module.scss";
+.rolling_bar_container {
+  display: flex;
+  width: 100%;
+
+  .rolling_bar_title {
+    width: 80px;
+    border: 1px solid gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .slide_vertical {
+    width: 680px;
+    margin: 0 auto;
+    background-color: $white_1;
+    display: flex;
+    justify-content: space-between;
+    .slide_item {
+      display: flex;
+      align-items: center;
+      height: 70px;
+      width: 100%;
+      padding: 10px;
+    }
+    .navigation_bg {
+      width: 35px;
+    }
+  }
+}
+.list_item {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr 1fr;
+  padding: 10px 0;
+  border-bottom: 1px solid #bdb6b2;
+
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+  }
+  .pinned_item {
+    font-weight: bold;
+  }
+  .item_no {
+  }
+  .item_title {
+    justify-content: flex-start;
+    cursor: pointer;
+    &:hover {
+      color: red;
+      font-weight: bold;
+      text-decoration: underline;
+    }
+  }
+  .item_created_at {
+  }
+  .item_views {
+  }
+}
+
+.search_box {
+  display: flex;
+  justify-content: flex-end;
+
+  .search_input {
+    all: unset;
+    width: 25%;
+    height: 33px;
+    font-size: 12px;
+    color: #99908a;
+    background-color: $white_1;
+    border: 0;
+    outline: 0;
+    padding: 2px 10px;
+    background: url("https://web-cdn.mironline.co.kr/mir2/2013_grand/contents/search_input.gif") no-repeat;
+  }
+  .search_button {
+    all: unset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    height: 33px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #938a86;
+    color: $white_1;
+  }
+}

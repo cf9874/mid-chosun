@@ -1,0 +1,90 @@
+@import "globals.module.scss";
+.rank_info_box {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  .date {
+    font-size: 40px;
+    letter-spacing: -1px;
+    width: 40%;
+  }
+  .rank_info {
+    .rank_info_item {
+      font-size: 14px;
+      list-style: none;
+      &::before {
+        content: "· "; // list-style
+      }
+    }
+  }
+}
+.rank_search_container {
+  border: 1px solid red;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  .rank_search_title {
+    width: 200px;
+  }
+  .dropdown {
+    width: 150px;
+  }
+  .rank_search_box {
+    width: 250px;
+    display: flex;
+
+    gap: 10px;
+    .rank_search_input {
+      all: unset;
+      width: 80%;
+      font-size: 12px;
+      color: #99908a;
+      background-color: $white_1;
+      border: 0;
+      outline: 0;
+      padding: 2px 10px;
+      background: url("https://web-cdn.mironline.co.kr/mir2/2013_grand/contents/dicsearch_input.gif") no-repeat;
+    }
+    .rank_search_button {
+      all: unset;
+      width: 20%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 33px;
+      font-size: 14px;
+      cursor: pointer;
+      background-color: #938a86;
+      color: $white_1;
+    }
+  }
+}
+.search_box {
+  display: flex;
+  justify-content: flex-end;
+
+  .search_input {
+    all: unset;
+    width: 25%;
+    height: 33px;
+    font-size: 12px;
+    color: #99908a;
+    background-color: $white_1;
+    border: 0;
+    outline: 0;
+    padding: 2px 10px;
+    background: url("https://web-cdn.mironline.co.kr/mir2/2013_grand/contents/search_input.gif") no-repeat;
+  }
+  .search_button {
+    all: unset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    height: 33px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #938a86;
+    color: $white_1;
+  }
+}

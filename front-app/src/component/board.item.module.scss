@@ -1,0 +1,44 @@
+.list_item {
+  border-bottom: 1px solid #bdb6b2;
+  padding: 10px;
+
+  .item_main {
+    .item_image {
+      width: 100%;
+      height: 150px;
+      border: 1px solid #00000020;
+      margin: 20px 0;
+    }
+    .item_title {
+      display: flex;
+      justify-content: center;
+      justify-content: flex-start;
+      margin-bottom: 10px;
+    }
+    &:hover {
+      .item_image {
+        border: 1px solid red;
+      }
+      .item_title {
+        color: red;
+        font-weight: bold;
+        text-decoration: underline;
+      }
+    }
+  }
+  .item_writer_box {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+
+    .item_writer {
+      display: flex;
+      // .server {
+      // }
+      // .nick {
+      // }
+    }
+    // .date {
+    // }
+  }
+}

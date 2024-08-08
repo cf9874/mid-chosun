@@ -1,0 +1,194 @@
+@import "globals.module.scss";
+.container {
+  border-top: 2px solid $black_3;
+  border-bottom: 2px solid $black_3;
+  margin-bottom: 150px;
+  padding-bottom: 40px;
+  .page_title {
+    font-size: 24px;
+    border-bottom: 2px solid $gray_9;
+    padding: 20px 0;
+  }
+  .download_title {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    margin-left: 20px;
+  }
+  .table_wrapper {
+    margin-top: 20px;
+    border-top: 1px solid $black_1;
+    .table_header,
+    .table,
+    .table_wide {
+      display: grid;
+      grid-template-columns: 1fr 2.2fr 2.2fr;
+      border-bottom: 1px solid $gray_9;
+      .table_header_item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient($gray_4, $gray_8);
+        height: 50px;
+        border-left: 1px solid $gray_9;
+        &:first-child {
+          border-left: none;
+        }
+      }
+      .table_item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        border-left: 1px solid $gray_9;
+        &:first-child {
+          background: $gray_4;
+          border-left: none;
+        }
+      }
+    }
+
+    .table_wide {
+      grid-template-columns: 1fr 4.4fr;
+    }
+  }
+  .download_info {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+    margin-top: 50px;
+    background: linear-gradient($gray_4, $gray_8);
+    border-top: 1px solid $gray_9;
+    border-bottom: 1px solid $gray_9;
+    .download_guide {
+      width: 60%;
+      .download_guide_info_title {
+        width: 70%;
+        font-family: Noto Sans KR;
+        font-size: 20px;
+        font-weight: 600;
+        color: $black_1;
+      }
+      .download_guide_info_desc {
+        margin: 20px 0;
+        font-family: Noto Sans KR;
+        font-size: 14px;
+        font-weight: 400;
+        color: $black_5;
+      }
+      .download_guide_button {
+        all: unset;
+        cursor: pointer;
+        background: $red_2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 250px;
+        height: 54px;
+        margin-top: 30px;
+        color: $white_1;
+        .guide_button_text {
+          width: 80%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        .guide_button_icon {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 10%;
+        }
+      }
+    }
+  }
+  .download_button_group {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40%;
+    gap: 10px;
+    .download_button1 {
+      all: unset;
+      height: 63px;
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      background-color: $black_3;
+      .download_button_text_box {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .download_button_text {
+          font-family: Noto Sans KR;
+          font-size: 16px;
+          font-weight: 600;
+          line-height: 23.17px;
+          text-align: left;
+          color: $white_1;
+        }
+        .download_button_text_sub {
+          font-family: Noto Sans KR;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 20.27px;
+          text-align: left;
+          color: $white_1;
+        }
+      }
+      .download_icon {
+      }
+    }
+    .download_button2 {
+      @extend .download_button1;
+      background-color: $black_5;
+    }
+  }
+  // .download_navigation_box {
+  //   padding: 30px 0;
+  //   border-bottom: 1px solid $black_1;
+
+  //   .navigation_row {
+  //     margin-bottom: 15px;
+  //     display: flex;
+  //     justify-content: center;
+  //     gap: 5px;
+
+  //     .download_button {
+  //       all: unset;
+  //       cursor: pointer;
+  //       background: $black_5;
+  //       display: flex;
+  //       align-items: center;
+  //       justify-content: center;
+  //       width: 200px;
+  //       padding: 10px 0;
+
+  //       .download_button_text_box {
+  //         width: 80%;
+  //         display: flex;
+  //         flex-direction: column;
+  //         color: $white_1;
+  //         .download_button_text {
+  //           &:last-child {
+  //             font-size: 12px;
+  //           }
+  //         }
+  //       }
+  //       .download_icon {
+  //         color: $white_1;
+  //         width: 10%;
+  //       }
+  //     }
+  //   }
+  // }
+  // .dodwnload_guide {
+  //   display: flex;
+  //   justify-content: center;
+  //   font-size: 14px;
+  //   font-weight: 600;
+  // }
+}

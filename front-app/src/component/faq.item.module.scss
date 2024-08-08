@@ -1,0 +1,55 @@
+@import "globals.module.scss";
+
+.faq_group {
+  .faq_question {
+    padding: 20px;
+    cursor: pointer;
+    display: flex;
+    border-bottom: 1px solid #e6e6e6;
+    align-items: center;
+    .question_row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      .quetion_title {
+        font-size: 15px;
+        font-weight: 400;
+        color: $black_6;
+      }
+      .quetion_title_active {
+        font-size: 15px;
+        font-weight: 600;
+        color: $black_2;
+      }
+      .icon {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+  .faq_answer {
+    padding: 20px;
+    background-color: #e1e0e080;
+    border-top: 1px solid $basic_border_color;
+    border-bottom: 1px solid $basic_border_color;
+    display: flex;
+    .ask_row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      .icon {
+        width: 24px;
+        height: 24px;
+      }
+    }
+    .answer_desc {
+      width: 80%;
+      font-family: Noto Sans KR;
+      font-size: 14px;
+      font-weight: 400;
+      color: $black_2;
+    }
+  }
+}

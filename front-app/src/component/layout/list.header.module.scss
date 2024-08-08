@@ -1,0 +1,27 @@
+.notice_nav_container {
+  grid-template-columns: 1fr 4fr 1fr 1fr;
+}
+.rank_nav_container {
+  grid-template-columns: 1fr 1fr 3fr 1fr 1fr 1.2fr 1.2fr;
+}
+.board_nav_container {
+  grid-template-columns: 1fr 3fr 2fr 1fr 1fr 1fr;
+}
+
+.notice_nav_container,
+.rank_nav_container,
+.board_nav_container {
+  display: grid;
+  height: 37px;
+  background-color: #e1dedd;
+  border: 1px solid #c4c1c0;
+  margin: 10px 0;
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .item_title {
+    justify-content: flex-start;
+  }
+}

@@ -1,0 +1,36 @@
+.list_container {
+  display: flex;
+  margin: 5px 0;
+  .list_image {
+    border: 1px solid #00000001 !important;
+    &:hover {
+      cursor: pointer;
+      border: 1px solid #ba0010 !important;
+    }
+  }
+  .item_wrapper {
+    padding: 5px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    .item_title {
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
+    .item_desc {
+      height: 35px;
+      overflow: hidden;
+      font-size: 12px;
+    }
+    .item_created {
+      font-size: 12px;
+    }
+  }
+  &:hover {
+    cursor: pointer;
+    color: #ba0010;
+    text-decoration: underline;
+  }
+}

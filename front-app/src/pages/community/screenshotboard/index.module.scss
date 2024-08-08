@@ -1,0 +1,35 @@
+@import "globals.module.scss";
+.notice_list_contianer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.search_box {
+  display: flex;
+  justify-content: flex-end;
+
+  .search_input {
+    all: unset;
+    width: 25%;
+    height: 33px;
+    font-size: 12px;
+    color: #99908a;
+    background-color: $white_1;
+    border: 0;
+    outline: 0;
+    padding: 2px 10px;
+    background: url("https://web-cdn.mironline.co.kr/mir2/2013_grand/contents/search_input.gif") no-repeat;
+  }
+  .search_button {
+    all: unset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    height: 33px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #938a86;
+    color: $white_1;
+  }
+}
